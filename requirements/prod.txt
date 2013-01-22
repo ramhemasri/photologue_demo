@@ -1,0 +1,3 @@
+-r common.txt
+# Note: usually use SQLite in dev, so only need psycopg2 in prod.
+psycopg2 # Remember to specify exact revision used!
