@@ -7,7 +7,7 @@ About
 This project serves 2 purposes:
 
 - It's a quick demo of django-photologue for people who wish to try it out.
-- It's also the basis of the django-photologue demo site (coming soon!).
+- The 'website' branch is used for the django-photologue demo site (coming soon!).
 
 Prerequisites
 =============
