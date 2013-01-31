@@ -39,10 +39,6 @@ These custom files should be version-controlled, for 2 reasons::
 1. Because the file is version-controlled, diffs are easy to spot.
 2. Tricks used by one dev are always worth sharing with all.
 
-Production environment
-^^^^^^^^^^^^^^^^^^^^^^
-See the :ref:`deployment-instructions-label` page for what happens in prod. 
-
 
 
 

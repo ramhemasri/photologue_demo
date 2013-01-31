@@ -12,8 +12,6 @@ Contents:
    :maxdepth: 2
 
    pages/configuration.rst
-   pages/deployment.rst
-
 
 Indices and tables
 ==================
