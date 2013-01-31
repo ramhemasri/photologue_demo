@@ -28,9 +28,10 @@ is strongly recommended::
 	mkvirtualenv --no-site-packages photologue_demo
 
 
-Obtain the url to your git repository::
+Clone this code into your project folder::
 
-	git clone <URL_TO_GIT_REPOSITORY> photologue_demo
+	(cd to the folder where the project will live)
+	git clone https://github.com/richardbarran/photologue_demo .
 
 Install requirements::
 
