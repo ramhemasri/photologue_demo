@@ -1,47 +1,3 @@
-Personal framework for creating Django projects. Largely inspired by
-`Django Best Practices <http://lincolnloop.com/django-best-practices/>`_, and
-also by my many years of making mistakes :-)
-
-Checklist for creating a project using this skeleton
-
-- Create a virtualenv.
-- Create the skeleton (django-admin.py startproject --template <PATH TO>/django-project-skel --extension py,rst,gitignore,html <PROJECT NAME>
-
-Install requirements::
-
-	cd photologue_demo
-	pip install -r requirements/dev.txt
-
-Documentation
-=============
-
-Set up Sphinx::
-
-	cd docs
-	sphinx-quickstart
-
-Remember to answer 'yes' to 'autodoc'.
-
-There are a couple of pre-prepared pages - link them into the documentation
-index::
-
-	.. toctree::
-	   :maxdepth: 2
-	
-	   pages/configuration.rst
-	   pages/deployment.rst
-
-
-Requirements
-============
-Some requirements such as South are auto-installed, but you'll want to revisit
-the requirements file and specify the exact revisions that have been installed
-for this project.
-
-
-Now delete anything up to this line, you don't need it anymore :-)
-===============================================================================
-
 #######################################
 Photologue_Demo Django Project
 #######################################
@@ -81,18 +37,20 @@ Install requirements::
 	cd photologue_demo
 	pip install -r requirements/dev.txt
 
-The project is set up to run SQLite in dev, so no database configuration is
-required. To setup the database::
+The project is set up to run SQLite in dev so that it can be quickly started
+with no configuration required (you can of course specify another database in
+the settings file). To setup the database::
 
-	python manage.py syncdb
-	python manage.py migrate
+	./manage.py syncdb
+	./manage.py migrate
 
 Note: You may want to get a copy of the production database instead of creating
 a blank local copy. YMMV.
 
-And finally run the project::
+And finally run the project (it defaults to a safe set of settings for a dev
+environment)::
 
-	python manage.py runserver
+	./manage.py runserver
 
 Open browser to http://127.0.0.1:8000
 
@@ -103,7 +61,7 @@ Head over to the Sphinx docs for this project::
 	cd docs
 	make html
 
-And then open the docs under photologue_demo/docs/_build/html/index.html for
+And then use your browser to open the docs under photologue_demo/docs/_build/html/index.html for
 more information on configuring and using this project.
 	
 .. 
