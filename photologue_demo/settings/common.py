@@ -131,7 +131,7 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'formatter': 'textlog',
-            'filename': '/var/log/django/photologue_demo.log',
+            'filename': os.path.join(PROJECT_DIR, 'log', 'photologue_demo.log'),
         },
         # Mail error-level logs to the admins.
         'mail_admins': {
@@ -161,7 +161,7 @@ LOGGING = {
         # logging of SQL statements. Default is to ditch them (send them to
         # null). Note that this logger only works if DEBUG = True.
         'django.db.backends': {
-            'handlers': ['null'],
+            'handlers': ['file'],
             'level': 'DEBUG',
             'propagate': False,
         },
