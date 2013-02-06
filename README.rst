@@ -48,6 +48,12 @@ the settings file). To setup the database::
 Note: You may want to get a copy of the production database instead of creating
 a blank local copy. YMMV.
 
+To initialise photologue run::
+
+  ./manage.py plinit
+
+Follow the instructions to configure photologue here: `Photologue Docs <http://django-photologue.readthedocs.org/en/latest/essentials/installation.html>`_
+
 And finally run the project (it defaults to a safe set of settings for a dev
 environment)::
 
