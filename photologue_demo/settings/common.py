@@ -161,7 +161,7 @@ LOGGING = {
         # logging of SQL statements. Default is to ditch them (send them to
         # null). Note that this logger only works if DEBUG = True.
         'django.db.backends': {
-            'handlers': ['file'],
+            'handlers': ['null'],
             'level': 'DEBUG',
             'propagate': False,
         },

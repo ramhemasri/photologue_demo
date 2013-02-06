@@ -19,3 +19,7 @@ atlassian-ide-plugin.xml
 /photologue_demo/public/media
 # Ignore documentation builds.
 /docs/_build
+
+# Ignore Log Files
+/photologue_demo/log/*.log
+
