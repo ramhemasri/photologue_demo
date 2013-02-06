@@ -131,7 +131,7 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'formatter': 'textlog',
-            'filename': '/var/log/django/photologue_demo.log',
+            'filename': os.path.join(PROJECT_DIR, 'log', 'photologue_demo.log'),
         },
         # Mail error-level logs to the admins.
         'mail_admins': {
