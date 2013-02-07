@@ -9,7 +9,7 @@ TEMPLATE_DEBUG = DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_DIR, 'database.sql3')
+        'NAME': os.path.join(TOP_FOLDER, 'database.sql3')
     }
 }
 

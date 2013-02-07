@@ -15,11 +15,10 @@
 atlassian-ide-plugin.xml
 
 # Project
-/photologue_demo/public/static
-/photologue_demo/public/media
+/public/static
+/public/media
 # Ignore documentation builds.
 /docs/_build
-
 # Ignore Log Files
-/photologue_demo/log/*.log
+/log/*.log
 

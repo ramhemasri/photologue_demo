@@ -1,10 +1,10 @@
 # Global settings for photologue_demo project.
 
 import os
+import sys
 
-# Note: the project dir is defined as the project python folder - not the outer
-# container folder.  
-PROJECT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+# Top level folder - the one created by the startproject command.
+TOP_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 
 ADMINS = (
     ('richard barran', 'richard@arbee-design.co.uk'),
@@ -24,15 +24,15 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-MEDIA_ROOT = os.path.join(PROJECT_DIR, 'public', 'media')
+MEDIA_ROOT = os.path.join(TOP_FOLDER, 'public', 'media')
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'public', 'static')
+STATIC_ROOT = os.path.join(TOP_FOLDER, 'public', 'static')
 STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIR, 'static'),
+    os.path.join(TOP_FOLDER, 'photologue_demo/static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -65,7 +65,7 @@ ROOT_URLCONF = 'photologue_demo.urls'
 WSGI_APPLICATION = 'photologue_demo.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_DIR, 'templates'),
+    os.path.join(TOP_FOLDER, 'photologue_demo/templates'),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -79,7 +79,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 FIXTURE_DIRS = (
-    os.path.join(PROJECT_DIR, 'fixtures'),
+    os.path.join(TOP_FOLDER, 'photologue_demo/fixtures'),
 )
 
 INSTALLED_APPS = [
@@ -131,7 +131,7 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'formatter': 'textlog',
-            'filename': os.path.join(PROJECT_DIR, 'log', 'photologue_demo.log'),
+            'filename': os.path.join(TOP_FOLDER, 'log', 'photologue_demo.log'),
         },
         # Mail error-level logs to the admins.
         'mail_admins': {
