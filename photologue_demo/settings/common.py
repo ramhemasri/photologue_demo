@@ -168,4 +168,9 @@ LOGGING = {
     }
 }
 
+# Don't display logging messages to console during unit test runs.
+if len(sys.argv) > 1 and sys.argv[1] == 'test':
+    LOGGING['loggers']['']['handlers'] = ['file']
+
+
 SOUTH_TESTS_MIGRATE = False
